@@ -1,0 +1,11 @@
+{
+  "name": "kupishoes/leos.partner.dto",
+  "license": "Private",
+  "type": "library",
+  "description": "Dto classes for exchanges with Lamoda B2B Platform",
+  "autoload": {
+    "psr-0": {
+      "LeosPartnerDto": "src/"
+    }
+  }
+}
