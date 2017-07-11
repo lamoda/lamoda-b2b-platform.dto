@@ -34,6 +34,15 @@ class Nomenclature
     /** @var string */
     public $category;
 
+    /** @var array */
+    public $imageUrls;
+
+    /** @var string */
+    public $gender;
+
+    /** @var string */
+    public $parentSku;
+
     /**
      * @return string
      */
@@ -192,5 +201,53 @@ class Nomenclature
     public function setCategory($category)
     {
         $this->category = $category;
+    }
+
+    /**
+     * @return array
+     */
+    public function getImageUrls()
+    {
+        return $this->imageUrls;
+    }
+
+    /**
+     * @param array $imageUrls
+     */
+    public function setImageUrls(array $imageUrls)
+    {
+        $this->imageUrls = $imageUrls;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGender()
+    {
+        return $this->gender;
+    }
+
+    /**
+     * @param string $gender
+     */
+    public function setGender($gender)
+    {
+        $this->gender = $gender;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getParentSku()
+    {
+        return $this->parentSku;
+    }
+
+    /**
+     * @param null|string $parentSku
+     */
+    public function setParentSku($parentSku)
+    {
+        $this->parentSku = $parentSku;
     }
 }
