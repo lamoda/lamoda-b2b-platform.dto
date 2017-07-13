@@ -4,8 +4,8 @@
   "type": "library",
   "description": "Dto classes for exchanges with Lamoda B2B Platform",
   "autoload": {
-    "psr-0": {
-      "LeosPartnerDto": "src/"
+    "psr-4": {
+      "LeosPartnerDto\\": "src/"
     }
   }
 }
