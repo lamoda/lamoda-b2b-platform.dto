@@ -43,6 +43,15 @@ class Nomenclature
     /** @var string */
     public $parentSku;
 
+    /** @var int */
+    public $partnerId;
+
+    /** @var string */
+    public $lamodaSku;
+
+    /** @var string */
+    public $contractType;
+
     /**
      * @return string
      */
@@ -249,5 +258,53 @@ class Nomenclature
     public function setParentSku($parentSku)
     {
         $this->parentSku = $parentSku;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPartnerId()
+    {
+        return $this->partnerId;
+    }
+
+    /**
+     * @param int $partnerId
+     */
+    public function setPartnerId($partnerId)
+    {
+        $this->partnerId = $partnerId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLamodaSku()
+    {
+        return $this->lamodaSku;
+    }
+
+    /**
+     * @param string $lamodaSku
+     */
+    public function setLamodaSku($lamodaSku)
+    {
+        $this->lamodaSku = $lamodaSku;
+    }
+
+    /**
+     * @return string
+     */
+    public function getContractType()
+    {
+        return $this->contractType;
+    }
+
+    /**
+     * @param string $contractType
+     */
+    public function setContractType($contractType)
+    {
+        $this->contractType = $contractType;
     }
 }
