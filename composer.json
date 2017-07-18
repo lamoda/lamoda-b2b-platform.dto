@@ -1,11 +1,14 @@
 {
   "name": "lamoda/lamoda-b2b-platform.dto",
-  "license": "Private",
   "type": "library",
   "description": "Dto classes for exchanges with Lamoda B2B Platform",
+  "license": "Apache-2.0",
   "autoload": {
     "psr-4": {
       "LeosPartnerDto\\": "src/"
     }
+  },
+  "suggest": {
+    "lamoda/lamoda-b2b-platform.php-sdk": ""
   }
 }
