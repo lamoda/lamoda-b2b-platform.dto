@@ -53,7 +53,7 @@ class Nomenclature
     public $contractType;
 
     /** @var string */
-    public $lamodaParentSku;
+    public $parentLamodaSku;
 
     /**
      * @return string
@@ -314,16 +314,16 @@ class Nomenclature
     /**
      * @return string
      */
-    public function getLamodaParentSku()
+    public function getParentLamodaSku()
     {
-        return $this->lamodaParentSku;
+        return $this->parentLamodaSku;
     }
 
     /**
-     * @param string $lamodaParentSku
+     * @param string $parentLamodaSku
      */
-    public function setLamodaParentSku($lamodaParentSku)
+    public function setParentLamodaSku($parentLamodaSku)
     {
-        $this->lamodaParentSku = $lamodaParentSku;
+        $this->parentLamodaSku = $parentLamodaSku;
     }
 }
