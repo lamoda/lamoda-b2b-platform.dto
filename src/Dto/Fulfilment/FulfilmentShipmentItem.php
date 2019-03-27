@@ -13,6 +13,15 @@ class FulfilmentShipmentItem
     /** @var float */
     public $price;
 
+    /** @var string|null */
+    public $ean;
+
+    /** @var float|null */
+    public $weight;
+
+    /** @var string|null */
+    public $datamatrix;
+
     /** @return string */
     public function getSku()
     {
@@ -57,5 +66,65 @@ class FulfilmentShipmentItem
     public function setPrice($price)
     {
         $this->price = $price;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getEan()
+    {
+        return $this->ean;
+    }
+
+    /**
+     * @param string|null $ean
+     *
+     * @return FulfilmentShipmentItem
+     */
+    public function setEan($ean)
+    {
+        $this->ean = $ean;
+
+        return $this;
+    }
+
+    /**
+     * @return float|null
+     */
+    public function getWeight()
+    {
+        return $this->weight;
+    }
+
+    /**
+     * @param float|null $weight
+     *
+     * @return FulfilmentShipmentItem
+     */
+    public function setWeight($weight)
+    {
+        $this->weight = $weight;
+
+        return $this;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getDatamatrix()
+    {
+        return $this->datamatrix;
+    }
+
+    /**
+     * @param string|null $datamatrix
+     *
+     * @return FulfilmentShipmentItem
+     */
+    public function setDatamatrix($datamatrix)
+    {
+        $this->datamatrix = $datamatrix;
+
+        return $this;
     }
 }
