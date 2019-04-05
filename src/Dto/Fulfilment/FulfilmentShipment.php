@@ -4,11 +4,16 @@ namespace LeosPartnerDto\Dto\Fulfilment;
 
 class FulfilmentShipment
 {
+    const DATE_FORMAT = 'd.m.Y';
+
     /** @var string */
     public $id;
 
     /** @var string */
     public $date;
+
+    /** @var string|null */
+    public $partnerId;
 
     /** @var FulfilmentShipmentPallet[] */
     public $pallets;
@@ -76,5 +81,25 @@ class FulfilmentShipment
     public function setItems(array $items)
     {
         $this->items = $items;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getPartnerId()
+    {
+        return $this->partnerId;
+    }
+
+    /**
+     * @param $partnerId
+     *
+     * @return $this
+     */
+    public function setPartnerId($partnerId)
+    {
+        $this->partnerId = $partnerId;
+
+        return $this;
     }
 }
