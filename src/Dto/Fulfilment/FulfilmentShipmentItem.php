@@ -19,8 +19,8 @@ class FulfilmentShipmentItem
     /** @var float|null */
     public $weight;
 
-    /** @var string|null */
-    public $datamatrix;
+    /** @var array */
+    public $datamatrixes = [];
 
     /** @return string */
     public function getSku()
@@ -109,21 +109,21 @@ class FulfilmentShipmentItem
     }
 
     /**
-     * @return string|null
+     * @return array
      */
-    public function getDatamatrix()
+    public function getDatamatrixes()
     {
-        return $this->datamatrix;
+        return $this->datamatrixes;
     }
 
     /**
-     * @param string|null $datamatrix
+     * @param array $datamatrix
      *
      * @return FulfilmentShipmentItem
      */
-    public function setDatamatrix($datamatrix)
+    public function setDatamatrixes($datamatrixes)
     {
-        $this->datamatrix = $datamatrix;
+        $this->datamatrixes = $datamatrixes;
 
         return $this;
     }
