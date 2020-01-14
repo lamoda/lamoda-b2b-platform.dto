@@ -21,6 +21,9 @@ class FulfilmentShipment
     /** @var FulfilmentShipmentItem[] */
     public $items;
 
+    /** @var string|null */
+    public $documentNumber;
+
     /** @return string */
     public function getId()
     {
@@ -99,6 +102,26 @@ class FulfilmentShipment
     public function setPartnerId($partnerId)
     {
         $this->partnerId = $partnerId;
+
+        return $this;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getDocumentNumber()
+    {
+        return $this->documentNumber;
+    }
+
+    /**
+     * @param string|null $documentNumber
+     *
+     * @return $this
+     */
+    public function setDocumentNumber($documentNumber)
+    {
+        $this->documentNumber = $documentNumber;
 
         return $this;
     }
